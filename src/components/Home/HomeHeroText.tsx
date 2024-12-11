@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, Button, Typography } from "@mui/material";
-import { ArrowForward, ArrowRight } from "@mui/icons-material";
+import { ArrowForward } from "@mui/icons-material";
 
 export default function HomeHeroText() {
   return (
