@@ -1,7 +1,8 @@
 import React, { ReactNode } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Home from "./pages/Home";
+import HomePage from "./pages/HomePage";
 import About from "./pages/About";
+import ServicePage from "./pages/ServicePage";
 
 type routeProps = {
   exact: boolean;
@@ -25,11 +26,16 @@ const routeList: routeProps[] = [
   {
     exact: true,
     path: "/",
-    component: <Home />,
+    component: <HomePage />,
   },
   {
     exact: true,
     path: "/about",
     component: <About />,
+  },
+  {
+    exact: true,
+    path: "/service",
+    component: <ServicePage />,
   },
 ];

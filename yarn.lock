@@ -1047,7 +1047,7 @@
     core-js-pure "^3.30.2"
     regenerator-runtime "^0.14.0"
 
-"@babel/runtime@^7.10.2", "@babel/runtime@^7.11.2", "@babel/runtime@^7.12.5", "@babel/runtime@^7.16.3", "@babel/runtime@^7.18.3", "@babel/runtime@^7.23.9", "@babel/runtime@^7.5.5", "@babel/runtime@^7.8.4", "@babel/runtime@^7.8.7", "@babel/runtime@^7.9.2":
+"@babel/runtime@^7.10.2", "@babel/runtime@^7.11.2", "@babel/runtime@^7.12.5", "@babel/runtime@^7.16.3", "@babel/runtime@^7.18.3", "@babel/runtime@^7.23.9", "@babel/runtime@^7.26.0", "@babel/runtime@^7.5.5", "@babel/runtime@^7.8.4", "@babel/runtime@^7.8.7", "@babel/runtime@^7.9.2":
   version "7.26.0"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.26.0.tgz#8600c2f595f277c60815256418b85356a65173c1"
   integrity sha512-FDSOghenHTiToteC/QRlv2q3DhPZ/oOXTBoirfWNx1Cx3TMVcGWQtMMmQcSvb/JjpNeGzx8Pq/b4fKEJuWm1sw==
@@ -1338,6 +1338,11 @@
   version "8.57.1"
   resolved "https://registry.yarnpkg.com/@eslint/js/-/js-8.57.1.tgz#de633db3ec2ef6a3c89e2f19038063e8a122e2c2"
   integrity sha512-d9zaMRSTIKDLhctzH12MtXvJKSSUhaHcjV+2Z+GK+EEY7XKpP5yR4x+N3TAcHTcu963nIr+TMcCb4DBCYX1z6Q==
+
+"@fontsource/roboto@^5.1.0":
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/@fontsource/roboto/-/roboto-5.1.0.tgz#00230737ec09c60ae877a5e33d067c0607fdd5ba"
+  integrity sha512-cFRRC1s6RqPygeZ8Uw/acwVHqih8Czjt6Q0MwoUoDe9U3m4dH1HmNDRBZyqlMSFwgNAUKgFImncKdmDHyKpwdg==
 
 "@humanwhocodes/config-array@^0.13.0":
   version "0.13.0"
@@ -1671,6 +1676,13 @@
   version "5.16.11"
   resolved "https://registry.yarnpkg.com/@mui/core-downloads-tracker/-/core-downloads-tracker-5.16.11.tgz#0295ae13eeb449a87939fadf029e3382b0b9a802"
   integrity sha512-2eVDGg9OvIXNRmfDUQyKYH+jNcjdv1JkCH5F2YDgUye5fMX5nxGiYHAUe1BXaXyDMaLSwXC7LRksEKMiIQsFdw==
+
+"@mui/icons-material@^6.2.0":
+  version "6.2.0"
+  resolved "https://registry.yarnpkg.com/@mui/icons-material/-/icons-material-6.2.0.tgz#8815b7b064234f525a174dd8bc59eb2f8986e79b"
+  integrity sha512-WR1EEhGOSvxAsoTSzWZBlrWFjul8wziDrII4rC3PvMBHhBYBqEc2n/0aamfFbwkH5EiYb96aqc6kYY6tB310Sw==
+  dependencies:
+    "@babel/runtime" "^7.26.0"
 
 "@mui/material@^5.16.11":
   version "5.16.11"
