@@ -7,13 +7,18 @@ import NavExplore from "../core/navigation/NavExplore";
 import ServiceView from "../components/service/ServiceView";
 
 export default function HomePage() {
+  
   return (
     <LayoutExplore>
       <Box>
         <NavExplore />
         <br />
-        <HomeHero />
-        <ServiceView/>
+        <div id="home">
+          <HomeHero />
+        </div>
+        <div id="service">
+          <ServiceView />
+        </div>
         {/* <MainMenu />
         <IconButton onClick={() => dispatch(onToggleExploreDarkMode())}>
           {themeStore.darkMode ? (

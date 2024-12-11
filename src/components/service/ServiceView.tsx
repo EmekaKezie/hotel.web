@@ -29,7 +29,11 @@ type dataProps = {
 export default function ServiceView() {
   return (
     <Box sx={{ height: "100%" }}>
-      <Paper elevation={0} sx={{ padding: "4rem" }}>
+      <Paper
+        elevation={0}
+        sx={{
+          padding: { lg: "4rem", md: "4rem", sm: "4rem 2rem", xs: "4rem 2rem" },
+        }}>
         <br />
         <Box>
           <Typography variant="h4">Discover our luxury apartments</Typography>
@@ -43,64 +47,68 @@ export default function ServiceView() {
         <Box
           sx={{
             border: "0px solid gray",
-            display: "flex",
+            display: { lg: "flex", md: "flex" },
+            flexdirection: { lg: "row", md: "row", sm: "row", xs: "column" },
             justifyContent: "space-between",
             gap: 4,
           }}>
-          {/* <Grid container spacing={2}> */}
           {data?.map((item, index) => (
-            // <Grid key={index} item lg={4} md={4} sm={3} xs={12}>
-            <Card sx={{ maxWidth: 345 }}>
-                
-              <CardActionArea>
-                <CardMedia
-                  component="img"
-                  height="140"
-                  image={item.imageUrl}
-                  alt="green iguana"
-                />
-                <CardContent>
-                  <Stack direction={"row"} alignItems={"center"}>
+            <Box
+              key={index}
+              sx={{
+                maxWidth: { lg: 345, md: 345, sm: 345, xs: "100%" },
+                marginBottom: { xs: "2rem" },
+              }}>
+              <Card>
+                <CardActionArea>
+                  <CardMedia
+                    component="img"
+                    height="140"
+                    image={item.imageUrl}
+                    alt="green iguana"
+                  />
+                  <CardContent>
+                    <Stack direction={"row"} alignItems={"center"}>
+                      <Typography
+                        gutterBottom
+                        variant="body1"
+                        component="div"
+                        color={"warning.main"}
+                        sx={{
+                          flexGrow: 1,
+                          fontSize: "1.2rem",
+                          fontWeight: "bold",
+                        }}>
+                        {item.apartmentType}
+                      </Typography>
+                      <Typography variant="body1" sx={{ fontWeight: "bold" }}>
+                        {Intl.NumberFormat("en-NG", {
+                          style: "currency",
+                          currency: "NGN",
+                        }).format(item.amount)}
+                      </Typography>
+                    </Stack>
+                    <br />
                     <Typography
-                      gutterBottom
-                      variant="body1"
-                      component="div"
-                      color={"warning.main"}
-                      sx={{
-                        flexGrow: 1,
-                        fontSize: "1.2rem",
-                        fontWeight: "bold",
-                      }}>
-                      {item.apartmentType}
+                      variant="body2"
+                      sx={{ color: "text.secondary" }}>
+                      {item.description}
                     </Typography>
-                    <Typography variant="body1" sx={{ fontWeight: "bold" }}>
-                      {Intl.NumberFormat("en-NG", {
-                        style: "currency",
-                        currency: "NGN",
-                      }).format(item.amount)}
-                    </Typography>
-                  </Stack>
-                  <br />
-                  <Typography variant="body2" sx={{ color: "text.secondary" }}>
-                    {item.description}
-                  </Typography>
-                </CardContent>
-              </CardActionArea>
-              {/* <CardActions>
-                <Button size="small" color="primary">
-                  Share
-                </Button>
-              </CardActions> */}
-            </Card>
-            // </Grid>
+                  </CardContent>
+                </CardActionArea>
+              </Card>
+            </Box>
           ))}
         </Box>
         <br />
         <br />
-        {/* </Grid> */}
       </Paper>
 
-      <Box sx={{ backgroundColor: "#f9f5ec ", padding: "8rem" }}>
+      <Box
+        sx={{
+          backgroundColor: "#f9f5ec ",
+          padding: { lg: "8rem", md: "8rem", sm: "8rem", xs: "4rem 2rem" },
+        }}>
         <Grid container spacing={10}>
           <Grid item lg={6} md={6} sm={6} xs={12}>
             <br></br>
