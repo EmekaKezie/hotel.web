@@ -1,0 +1,23 @@
+{
+    "compilerOptions": {
+      "target": "es5",
+      "lib": ["dom", "esnext"],
+      "allowJs": true,
+      "skipLibCheck": true,
+      "esModuleInterop": true,
+      "strict": true,
+      "jsx": "react",  // Use "react" for React 16/17, or "react-jsx" for React 17+
+      "moduleResolution": "node",
+      "module": "esnext",
+      "resolveJsonModule": true,
+      "isolatedModules": true
+    },
+    "include": [
+      "src/**/*.ts",
+      "src/**/*.tsx"
+    ],
+    "exclude": [
+      "node_modules"
+    ]
+  }
+  
