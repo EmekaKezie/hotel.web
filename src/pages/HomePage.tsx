@@ -4,7 +4,7 @@ import { Box } from "@mui/material";
 import LayoutExplore from "../core/layout/LayoutExplore";
 import HomeView from "../components/Home/HomeView";
 import NavExplore from "../core/navigation/NavExplore";
-import ServiceView from "../components/Service/ServiceView";
+import ServiceView from "../components/service/ServiceView";
 
 export default function HomePage() {
   
