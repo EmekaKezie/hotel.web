@@ -40,5 +40,8 @@ const theme = createTheme({
     body1: {
       fontWeight: 400, // Regular font
     },
+    body2: {
+      fontWeight: 400, // Regular font
+    },
   },
 });

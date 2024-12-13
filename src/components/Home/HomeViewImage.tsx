@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, ImageList, ImageListItem } from "@mui/material";
 
-export default function HomeHeroImage() {
+export default function HomeViewImage() {
   return (
     <Box>
       <Box

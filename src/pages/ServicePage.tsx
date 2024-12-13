@@ -2,7 +2,7 @@ import React from "react";
 import { Box } from "@mui/material";
 import LayoutExplore from "../core/layout/LayoutExplore";
 import NavExplore from "../core/navigation/NavExplore";
-import ServiceView from "../components/service/ServiceView";
+import ServiceView from "../components/Service/ServiceView";
 
 export default function ServicesPage() {
   return (

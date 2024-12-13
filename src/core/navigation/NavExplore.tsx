@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { AppBar, Box, Chip, Toolbar, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
+import NavExploreMenu1 from "./NavExploreMenu1";
 
 export default function NavExplore() {
   const [bgColor, setBgColor] = useState("transparent");
@@ -56,27 +57,8 @@ export default function NavExplore() {
         </Box>
 
         {/* Center Section */}
-        <Box
-          component={"nav"}
-          sx={{
-            marginLeft: "5%",
-            display: { lg: "flex", md: "flex", sm: "flex", xs: "none" },
-            gap: 4,
-          }}>
-          <a href="/#home" style={{ textDecoration: "none" }}>
-            {/* <Link to="/#home" style={{ textDecoration: "none" }}> */}
-            <Typography color="warning.main">Home</Typography>
-            {/* </Link> */}
-          </a>
-          <Link to="/about" style={{ textDecoration: "none" }}>
-            <Typography color="text.primary">About</Typography>
-          </Link>
-          <a href="/#service" style={{ textDecoration: "none" }}>
-            {/* <Link to="/#service" style={{ textDecoration: "none" }}> */}
-            <Typography color="text.primary">Services</Typography>
-            {/* </Link> */}
-          </a>
-        </Box>
+
+        <NavExploreMenu1 />
 
         {/* Right Section */}
         <Box

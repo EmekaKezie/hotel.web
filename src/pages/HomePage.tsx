@@ -2,9 +2,9 @@ import React from "react";
 import { Box } from "@mui/material";
 
 import LayoutExplore from "../core/layout/LayoutExplore";
-import HomeHero from "../components/Home/HomeHero";
+import HomeView from "../components/Home/HomeView";
 import NavExplore from "../core/navigation/NavExplore";
-import ServiceView from "../components/service/ServiceView";
+import ServiceView from "../components/Service/ServiceView";
 
 export default function HomePage() {
   
@@ -14,7 +14,7 @@ export default function HomePage() {
         <NavExplore />
         <br />
         <div id="home">
-          <HomeHero />
+          <HomeView />
         </div>
         <div id="service">
           <ServiceView />

@@ -6,7 +6,7 @@
       "skipLibCheck": true,
       "esModuleInterop": true,
       "strict": true,
-      "jsx": "react",  // Use "react" for React 16/17, or "react-jsx" for React 17+
+      "jsx": "react-jsx",  // Use "react" for React 16/17, or "react-jsx" for React 17+
       "moduleResolution": "node",
       "module": "esnext",
       "resolveJsonModule": true,

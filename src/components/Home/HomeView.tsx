@@ -1,9 +1,9 @@
 import React from "react";
 import { Box, Grid } from "@mui/material";
-import HomeHeroImage from "./HomeHeroImage";
-import HomeHeroText from "./HomeHeroText";
+import HomeViewImage from "./HomeViewImage";
+import HomeViewHero from "./HomeViewHero";
 
-export default function HomeHero() {
+export default function HomeView() {
   return (
     <Box
       sx={{
@@ -31,7 +31,7 @@ export default function HomeHero() {
             justifyContent: "center",
             border: "0px solid gray",
           }}>
-          <HomeHeroText />
+          <HomeViewHero />
         </Grid>
         <Grid
           item
@@ -45,7 +45,7 @@ export default function HomeHero() {
             justifyContent: "center",
             border: "0px solid gray",
           }}>
-          <HomeHeroImage />
+          <HomeViewImage />
         </Grid>
       </Grid>
     </Box>

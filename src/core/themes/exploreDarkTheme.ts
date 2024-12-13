@@ -13,7 +13,14 @@ export const exploreDarkTheme = createTheme({
       black: "#ffffff",
       white: "#111111",
     },
-    background: { default: "#121212", paper: "#1A1A1A" },
-    text: { primary: "#C4C4C4", secondary: "#616F83", disabled: "#6D6D6D" },
+    background: {
+      default: "#121212",
+      paper: "#1A1A1A",
+    },
+    text: {
+      primary: "#C4C4C4",
+      secondary: "#616F83",
+      disabled: "#6D6D6D",
+    },
   },
 });
